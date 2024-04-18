@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package documents;
+
+// Define a Page message
+message Page {
+    int32 page_number = 1;
+    map<string, string> page_value = 2;
+}
+
+// Define a Metadata message
+message Metadata {
+    string file_type = 1;
+    string document_name = 2;
+    map<string, string> additional_info = 3;
+}
+
+// Define a Document message
+message Document {
+    repeated Page pages = 1;
+    Metadata metadata = 2;
+}
+
+// Define a Documents message
+message Documents {
+    repeated Document documents = 1;
+}

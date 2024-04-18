@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "cambioml-protobuf"
+version = "0.0.0"
+description = "cambioml protobuf"
+authors = ["CambioML <wanwanaiai45@gmail.com>"]
+maintainers = ["Rachel Hu <goldpiggy@berkeley.edu>"]
+license = "Apache License"
+readme = "README.md"
+
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.13"
+protobuf = "4.25.3"
+grpcio = "1.62.1"
+grpcio-tools = "1.62.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.5.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
